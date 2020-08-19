@@ -1,0 +1,1 @@
+".\src\Source Group 1\Bluetooth.c" PRINT (.\out\Keil_C51\Bluetooth.lst) OMF2 TABS (2) OPTIMIZE (8,SPEED) SMALL ROM (LARGE) INCDIR(.\dependence;.\src\Source Group 1) DEFINE(DEBUG,__UVISION_VERSION) OBJECT(.\out\Keil_C51\Bluetooth.o)

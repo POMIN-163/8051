@@ -1,0 +1,396 @@
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/25|10:49:04|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/25|22:31:54|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/26|09:06:57|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/26|11:38:20|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/26|20:30:15|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\MFCC719.tmp'
+    at lstatSync (fs.js:847:3)
+    at fs.lstatSync (electron/js2c/asar.js:235:27)
+    at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+    at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+    at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+    at Array.forEach (<anonymous>)
+    at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+    at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74151)
+    at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+    at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+    at EventEmitter.emit (events.js:203:13)
+    at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+    at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+    at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+    at FSWatcher.emit (events.js:203:13)
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/27|09:45:53|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/27|11:55:06|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/27|12:58:56|GMT+0800
+[Error] : Error: Illegal value for `line`
+    at d._lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:471:927)
+    at Object.lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:470:891)
+    at DocumentDecoration.updateScopeDecorations (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:186:64)
+    at Timeout._onTimeout (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:133:18)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/27|20:03:05|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\port.c'
+    at lstatSync (fs.js:847:3)
+    at fs.lstatSync (electron/js2c/asar.js:235:27)
+    at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+    at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+    at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+    at Array.forEach (<anonymous>)
+    at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+    at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74151)
+    at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+    at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+    at EventEmitter.emit (events.js:203:13)
+    at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+    at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+    at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+    at FSWatcher.emit (events.js:203:13)
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/27|22:28:52|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/28|10:34:51|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/29|21:19:06|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/29|21:20:22|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/6/30|16:07:10|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/8|11:36:17|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/8|15:13:43|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\EEPROM.c~RF1e12f2a.TMP'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74770)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74087)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/9|09:54:12|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/9|17:34:51|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/10|11:48:21|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/10|11:53:08|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/10|12:44:35|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/12|11:37:57|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/12|11:38:58|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/12|12:09:03|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/13|12:14:42|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/13|16:19:48|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\DS1302_demo.c'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74770)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74087)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/14|10:24:56|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/14|16:58:35|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/14|16:59:10|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/15|14:19:08|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/18|20:18:43|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/18|23:06:30|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/19|09:55:33|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/19|15:10:19|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\Infrared.h'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74151)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: Illegal value for `line`
+	at d._lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:465:884)
+	at Object.lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:464:823)
+	at DocumentDecoration.updateScopeDecorations (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:186:64)
+	at Timeout._onTimeout (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:133:18)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: Illegal value for `line`
+	at d._lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:465:884)
+	at Object.lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:464:823)
+	at DocumentDecoration.updateScopeDecorations (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:186:64)
+	at Timeout._onTimeout (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:133:18)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\Source Group 1\ADC.h'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74770)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74087)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: Illegal value for `line`
+	at d._lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:465:884)
+	at Object.lineAt (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:464:823)
+	at DocumentDecoration.updateScopeDecorations (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:186:64)
+	at Timeout._onTimeout (c:\Users\16377\.vscode\extensions\coenraads.bracket-pair-colorizer-1.0.61\out\src\documentDecoration.js:133:18)
+	at listOnTimeout (internal/timers.js:531:17)
+	at processTimers (internal/timers.js:475:7)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/20|14:16:49|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|12:17:54|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|13:28:37|GMT+0800
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\PWM分段延时.c'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74151)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:84944)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Hidden] : Error: Command failed: python -m stcgal -V
+C:\Users\16377\AppData\Local\Programs\Python\Python37\python.exe: No module named stcgal
+
+	at checkExecSyncError (child_process.js:634:11)
+	at Object.execSync (child_process.js:670:15)
+	at Object.execSync (electron/js2c/asar.js:696:23)
+	at y.isStcFlasherInstalled (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:8991)
+	at C.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:232223)
+	at Generator.next (<anonymous>)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:228728
+	at new Promise (<anonymous>)
+	at n (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:228473)
+	at C._prepare (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:232061)
+	at C.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:229679)
+	at Generator.next (<anonymous>)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:228728
+	at new Promise (<anonymous>)
+	at n (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:228473)
+	at C.upload (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:229626)
+	at t.ProjectExplorer.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:182251)
+	at Generator.next (<anonymous>)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:161485
+	at new Promise (<anonymous>)
+	at n (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:161230)
+	at t.ProjectExplorer.UploadToDevice (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:181950)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:143636
+	at _executeContributedCommand (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:631:163)
+	at _.$executeContributedCommand (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:631:538)
+	at m._doInvokeHandler (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:801:683)
+	at m._invokeHandler (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:801:375)
+	at m._receiveRequest (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:800:14)
+	at m._receiveOneMessage (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:799:6)
+	at d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:797:34
+	at l.fire (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:45:801)
+	at v.fire (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:235:849)
+	at d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:975:744
+	at l.fire (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:45:801)
+	at v.fire (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:235:849)
+	at t.PersistentProtocol._receiveMessage (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:240:276)
+	at d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:237:357
+	at l.fire (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:45:801)
+	at p.acceptChunk (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:233:393)
+	at d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:232:753
+	at Socket.t (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:241:826)
+	at Socket.emit (events.js:203:13)
+	at addChunk (_stream_readable.js:295:12)
+	at readableAddChunk (_stream_readable.js:276:11)
+	at Socket.Readable.push (_stream_readable.js:210:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+[Error] : Error: ENOENT: no such file or directory, lstat 'd:\My\keilmake\VSC\Target 1\src\c51mfps.lib'
+	at lstatSync (fs.js:847:3)
+	at fs.lstatSync (electron/js2c/asar.js:235:27)
+	at Object.fs.lstatSync (electron/js2c/asar.js:235:27)
+	at s.IsDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:3690)
+	at c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2871
+	at Array.forEach (<anonymous>)
+	at s.GetList (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:2799)
+	at M.EnumIncDir (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74652)
+	at M.UpdateFileGroup (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74087)
+	at M.onSourceDirChanged (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:77977)
+	at EventEmitter.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:74895)
+	at EventEmitter.emit (events.js:203:13)
+	at M.emit (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:66691)
+	at t.FileWatcher.e.OnRename (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:73234)
+	at FSWatcher.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:85167)
+	at FSWatcher.emit (events.js:203:13)
+	at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:131:12)
+[Error] : Error: ENOENT: no such file or directory, copyfile 'd:\My\keilmake\test\useless\..\..\VSC\Target 1\src\Source Group 1\PWM-舵机.c' -> 'd:\My\keilmake\VSC\test\Target 1\src\Source Group 1\PWM-舵机.c'
+	at Object.copyFileSync (fs.js:1731:3)
+	at Object.func (electron/js2c/asar.js:140:31)
+	at Object.func [as copyFileSync] (electron/js2c/asar.js:140:31)
+	at M.CopyGroupFiles (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:79269)
+	at M._Import (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:81514)
+	at M.Import (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:69103)
+	at M.<anonymous> (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:175921)
+	at Generator.next (<anonymous>)
+	at s (c:\Users\16377\.vscode\extensions\cl.eide-1.12.0\dist\extension.js:1:161287)
+	at processTicksAndRejections (internal/process/task_queues.js:85:5)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|14:41:24|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|17:18:15|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|18:10:43|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/30|11:35:20|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+

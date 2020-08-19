@@ -1,0 +1,112 @@
+LX51 LINKER/LOCATER V4.66.87.0                                                          07/21/2020  20:10:33  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.87.0, INVOKED BY:
+D:\MAKER\KEIL\C51\BIN\LX51.EXE .\OUT\KEIL_C51\BLUETOOTH.O TO .\OUT\KEIL_C51\TARGET PRINT (.\out\Keil_C51\Target.map) 
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\OUT\KEIL_C51\BLUETOOTH.O (BLUETOOTH)
+         COMMENT TYPE 0: C51 V9.57.0.0
+  D:\MAKER\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\OUT\KEIL_C51\TARGET (BLUETOOTH)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   00004EH   CODE
+I:000000H   I:000000H   I:00007FH   000009H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\OUT\KEIL_C51\TARGET (BLUETOOTH)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     DATA           ?DT?BLUETOOTH
+000009H   000009H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000018H   000016H   BYTE   UNIT     CODE           ?PR?PORT_START?BLUETOOTH
+000019H   000022H   00000AH   ---    ---      **GAP**
+000023H   000025H   000003H   BYTE   OFFS..   CODE           ?BLUETOOTH?00023
+000026H   000039H   000014H   BYTE   UNIT     CODE           ?PR?PORT?BLUETOOTH
+00003AH   00004BH   000012H   BYTE   UNIT     CODE           ?PR?MAIN?BLUETOOTH
+00004CH   000057H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\OUT\KEIL_C51\TARGET (BLUETOOTH)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+PORT/BLUETOOTH              ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/BLUETOOTH
+
+MAIN/BLUETOOTH              ----- -----  ----- -----
+  +--> PORT_START/BLUETOOTH
+
+PORT_START/BLUETOOTH        ----- -----  ----- -----
+
+
+
+LX51 LINKER/LOCATER V4.66.87.0                                                        07/21/2020  20:10:33  PAGE 2
+
+
+PUBLIC SYMBOLS OF MODULE:  .\OUT\KEIL_C51\TARGET (BLUETOOTH)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100003AH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      0100003AH   CODE     ---       main
+      01000026H   CODE     ---       port
+      01000003H   CODE     ---       PORT_START
+      00000008H   DATA     BYTE      rec
+
+
+
+SYMBOL TABLE OF MODULE:  .\OUT\KEIL_C51\TARGET (BLUETOOTH)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       BLUETOOTH
+      00000008H   PUBLIC    DATA     BYTE      rec
+      0100003AH   PUBLIC    CODE     ---       main
+      01000026H   PUBLIC    CODE     ---       port
+      01000003H   PUBLIC    CODE     ---       PORT_START
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000026H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100003AH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=10.0 xdata=0 const=0 code=78
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

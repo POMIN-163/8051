@@ -1,0 +1,14 @@
+{
+    "global": {
+        "ram-mode": "SMALL",
+        "rom-mode": "LARGE"
+    },
+    "c/cpp-compiler": {
+        "optimization-type": "SPEED",
+        "optimization-level": "level-8"
+    },
+    "asm-compiler": {},
+    "linker": {},
+    "beforeBuildTasks": [],
+    "afterBuildTasks": []
+}

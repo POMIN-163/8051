@@ -1,0 +1,264 @@
+#include <reg52.h>
+#define SONG 4				// ?è?úμ?êyá?
+#define uchar unsigned char	// ò?oóunsigned char?í?éò?ó?uchar′úì?
+#define uint  unsigned int	// ò?oóunsigned int ?í?éò?ó?uint ′úì?
+#define ulong unsigned long	// ò?oóunsigned long?í?éò?ó?ulong′úì?
+sbit Key1=P1^0;	//?¨ò?°′?ü1//2￥·??ú??
+sbit Key2=P1^1;	//?¨ò?°′?ü2//??3y′￠′?
+sbit Key3=P1^2;	//?¨ò?°′?ü3//2￥·?μˉ×à
+sbit Speaker=P1^4;	//?¨ò???éù?÷?ó?ú
+sbit Do=P3^0;	//Do
+sbit led1=P3^1;	//Re
+sbit Mi=P3^2;	//Mi
+sbit Fa=P3^3;	//Fa
+sbit So=P3^4;	//So
+sbit La=P3^5;	//La
+sbit Si=P3^6;	//Si
+sbit Do_=P3^7;	//Do+
+//°???ò?·?°′?ü
+
+uchar gTone=0;		// gTone′ú±íμ±?°òa2￥·?μ?ò?μ÷
+uchar gPlayStatus;	// gPlayStatus′ú±íμ±?°μ?2￥·?×′ì?￡?0ê?í￡?1￡?1ê?2￥·?
+uchar gSong;	    	// gSong′ú±íμ±?°2￥·?μ?μú??ê×?è
+uchar xdata savey[];
+uchar idata savej[];
+
+//  ?¨ê±?÷3??μ          μí1  μí2  μí3  μí4  μí5  μí6  μí7  ?D1  ?D2  ?D3  ?D4  ?D5  ?D6  ?D7  ??1  ??2  ??3  ??4  ??5  ??6  ??7
+uchar code  chuTL0[]={ 140,  91,  21, 103,   4, 144,  12,  68, 121, 220,  52, 130, 200,   6,  34,  86, 133, 154, 193, 228,   3 };
+uchar code  chuTH0[]={ 248, 249, 250, 250, 251, 251, 252, 252, 252, 252, 253, 253, 253, 254, 254, 254, 254, 254, 254, 254, 255 };
+//                      0    1    2    3     4   5    6     7  	 8   9	  10   11   12   13   14   15   16   17   18   19   20
+//  é?·?ê?ò?μ÷
+// ????ê??·μ?à??×
+uchar code Music3[]={ 
+	5,4,  9,2,  8,2,  9,4, 8,2,  9,2,       
+	10,3, 11,1, 10,2, 8,2, 9,8,  9,1,     
+	10,2, 10,1, 9,1,  8,2, 7,1,  7,1,  
+	8,2,  7,1,  7,1,  8,2, 9,2,  7,2,  
+	6,2,  5,2,  7,2,  6,8, 5,4,  9,2,  
+	8,2,  9,4,  8,2,  9,2, 10,2, 10,1, 
+	11,1, 9,2};
+	
+
+//???ó×?3á°òμ???o￠?·μ?à??×
+uchar code Music4[]={ 
+	9,4,  9,2,  10,2, 11,4, 7,2,  8,2,       
+	9,2,  9,2,  9,2,  10,2, 11,4, 8,2,  
+	9,2,  10,4, 10,2, 9,2,  7,4,  10,2, 
+	9,2,  10,4, 5,2,  7,2,  8,4,  7,2,  
+	8,2,  9,4,  9,2,  10,2, 11,4, 12,2, 
+	13,2, 14,2, 14,2, 9,2};
+
+//??ü?àò?¨?·μ?à??× 						 	
+uchar code Music1[]={ 
+	9,4,  9,2,  11,2, 12,2, 14,2, 14,2, 12,2,  
+	11,4, 11,2, 12,2, 11,8, 9,4,  9,2,  11,2, 
+	12,2, 14,2, 14,2, 12,2, 11,4, 11,2, 12,2, 
+	11,8, 11,4, 11,4, 11,4, 9,2,  11,2 };
+
+//????à??ì?·μ?à??×  
+uchar code Music2[]={  
+	9,2,  9,2,  10,2, 11,2,   
+	11,2, 10,2, 9,2,  8,2,         
+	7,2,  7,2,  8,2,  9,2,        
+	9,3,  8,1,  8,4,  9,2,  
+	9,2,  10,2, 11,2, 11,2, 
+	10,2, 9,2,  8,2,  7,2,  
+	7,2,  8,2,  9,2,  8,3,  
+	7,1,  7,4,  8,2,  8,2,  
+	9,2,  7,2,  8,2,  9,1,  
+	10,1, 9,2,  7,2} ;
+	
+////?óê±oˉêy￡?′ó???óê±1ms￡?2???è·
+//timeê?òa?óê±μ?oá??êy
+uchar r_buf; //蓝牙接收到的字符存储缓冲区
+
+void InitUART() //串口初始化9600
+{//初始化串口定时器9600
+	TMOD = 0x01;
+	PCON = 0x00;
+	SCON = 0x50;   
+     TH1 = 0xFD;
+     TL1 = 0xFD;
+	TR1 = 1;
+	ES = 1;
+	EA = 1;
+}
+void SendOneByte(unsigned char c) //发送字符函数
+{
+    SBUF = c;
+    while(!TI);
+    TI = 0;
+}
+
+void delay(uint time)		
+{
+	uint i,j;
+	for(i=0;i<time;i++)
+		for(j=0;j<112;j++);
+}
+//// ·￠3????¨ò?μ÷?°???ú??μ?éùò?
+//tone′ú±íò?μ÷
+//beat′ú±í?ú??	 
+void PlayTone(uchar tone,float beat)
+{
+	int i;
+	gTone=tone;		// ??ò?μ÷?μ?3??è???±?á?gTone
+	TH0 = chuTH0[tone];	// ×°è??¨ê±?÷TH0μ?3??μ
+	TL0 = chuTL0[tone];	// ×°è??¨ê±?÷TL0μ?3??μ
+	TR0=1;			// ???ˉ?¨ê±?÷
+	for(i=0;i<beat;i++)		
+	{
+		delay(200);	  
+	}
+	TR0=0;			// í￡?1?¨ê±?÷	
+	Speaker=1;	
+	}
+//// 2￥·??ú??μ?ò?à?
+// music[]ê?òa2￥·?μ?à??×êy×é￡?
+// numê?êy×éà???μ??a????êy
+void PlayMusic(uchar music[],uint num)
+{	
+	uint i=0;
+	while(i<num)	//?D??2￥·?-2￥·??ú??-??ò??ú-í￡?12￥·?		
+	{   
+		if(gPlayStatus==1)			  	// ?D??2￥·?×′ì??a2￥·??1ê??Yí￡
+		{    
+			PlayTone(music[i],music[i+1]);// ?aê??Y×àò????ú??
+			i+=2;					// ??è???ò????ú??￡?òò?a??2??êy?a1×é￡??ùò???′?òa?ó2
+			if(i==num)				// ?D???è?úê?·?2￥·?íêá?
+			{
+				gPlayStatus=0;			// 2￥·?íêá?μ??°￡??ò°?2￥·?×′ì????a?Yí￡￡?·??ò?á?-?·2￥·?
+			}
+		}
+		if(Key1==0)				 	// ??ò??ú
+		{
+			delay(10);				// ??3y°′?ü°′??μ????ˉ
+			while(!Key1);				// μè′y°′?üêí·?
+			delay(10);				// ??3y°′?ü?é?aμ????ˉ
+			gSong++;					// °?μ±?°2￥·?μ?μú??ê×?èμ?±?á?gSong?ó1￡??′?Dμ???ò??ú
+			if(gSong>SONG)				// è?1?gSong?aSONG￡??μ?÷μ?oó??μ???í·á?￡??ò×a?aμúò?ê×
+				gSong=0;
+			break;	
+		}				
+	}
+}
+//// ?¨ê±?÷3?ê??ˉoˉêy
+void TimerInit()
+{
+	TMOD=1;			// ?¨ê±?÷0￡?1¤×÷·?ê?1
+	TH0=0;			// ×°?¨ê±?÷TH0μ?3??μ
+	TL0=0;			// ×°?¨ê±?÷TL0μ?3??μ
+	ET0=1;			// ?a???¨ê±?÷0?D??		   
+	EA=1;			// ?a??×ü?D??
+}
+//// μˉ×à?üé¨?èoˉêy
+uchar KeyScanf()
+{
+	if(Do==0)			// °′?ü1±?°′??￡?·μ??1
+		return 1;	
+	if(led1==0)			// °′?ü2±?°′??￡?·μ??2
+		return 2;
+	if(Mi==0) 		// °′?ü3±?°′??￡?·μ??3
+		return 3;
+	if(Fa==0) 		// °′?ü4±?°′??￡?·μ??4
+		return 4;
+	if(So==0) 		// °′?ü5±?°′??￡?·μ??5
+		return 5;
+	if(La==0)			// °′?ü6±?°′??￡?·μ??6
+		return 6;
+	if(Si==0)			// °′?ü7±?°′??￡?·μ??7
+		return 7;
+	if(Do_==0)  		// °′?ü8±?°′??￡?·μ??8
+		return 8;
+	return 0;	  		// 8??°′?ü????±?°′??￡?·μ??0
+}
+
+
+
+//// ?÷oˉêy￡?3ìDò′ó?aà??aê??′DD
+void main()
+{  
+	uchar ret;				// ó?óú±￡′?ò?μ÷?üoˉêyμ?·μ???μ
+	
+	gSong=0;					// é?μ???è?μúò?ê×?è
+	gPlayStatus=0;				// é?μ???è?ê?0í￡?1×′ì?￡¨1?a2￥·?×′ì?￡?
+	while(1)						
+	{
+		if(gPlayStatus==1)		// è?1?′|óú2￥·?×′ì?￡??ò?D??ê???ò?ê×?è?úDèòa2￥·?
+		{
+			switch(gSong) 		
+			{
+				case 1 : PlayMusic(Music1,sizeof(Music1)); break;
+				case 2 : PlayMusic(Music2,sizeof(Music2)); break;
+				case 3 : PlayMusic(Music3,sizeof(Music3)); break;
+				case 4 : PlayMusic(Music4,sizeof(Music4)); break;
+				default: 	break;	
+			}	
+		}
+		
+		if(Key1==0)			// ?aê?2￥·?
+		{
+			delay(1);			// ??3y°′?ü°′??μ????ˉ
+			while(!Key1);		// μè′y°′?üêí·?
+			delay(1);			// ??3y°′?ü?é?aμ????ˉ
+			gSong++;			// °?μ±?°2￥·?μ?μú??ê×?èμ?±?á?gSong?ó1￡??′?Dμ???ò??ú
+			gPlayStatus=1;
+			if(gSong>SONG)		// è?1?gSong?aSONG￡??μ?÷μ?oó??μ???í·á?￡??ò×a?aμúò?ê×
+			{
+			gSong=0;			// 2￥·?íê±?￡?í￡?12￥·?
+			gPlayStatus=0;
+			}	// 2￥·?×′ì????a0￡??è?áê?
+		}		
+		ret=KeyScanf();
+		if(ret!=0)
+		{
+			TH0 = chuTH0[ret+6];	// ×°è??¨ê±?÷TH0μ?3??μ
+			TL0 = chuTL0[ret+6];	// ×°è??¨ê±?÷TL0μ?3??μ
+			gTone=ret+6;
+			TR0=1;
+			while(KeyScanf());		// μè′y°′?üêí·?
+			delay(70);			// °′?üêí·???oó￡??ù2￥·?70oá??￡?′?μ?óàò?μ?D§1?
+			TR0=0;				// í￡?1?¨ê±?÷
+			Speaker=1;
+		}
+		if(ret==0&Key1==1&Key2==1&Key3==1)
+		{TimerInit();
+		InitUART();				// ?¨ê±?÷3?ê??ˉ}		
+		}
+}
+}
+//// ?¨ê±?÷0?D??′|àíoˉêy
+void time0() interrupt 1
+{
+	Speaker=!Speaker;		// ????????éù?÷μ?1ü??è?·′
+	TH0=chuTH0[gTone];		// ??×°?¨ê±?÷TH0μ?3??μ
+	TL0=chuTL0[gTone];		// ??×°?¨ê±?÷TL0μ?3??μ	
+}
+void UARTInterrupt(void) interrupt 4 //串口接收字符
+{
+    if(RI)
+    {
+        RI = 0;
+        //add your code here!
+r_buf = SBUF;
+if(r_buf == '0')//如果为字符‘0’，灯1亮
+{
+Key1 = 0;
+delay(2);
+Key1 = 1;
+}
+if(r_buf == '1')//如果为字符‘1’，灯2亮
+{
+Key2 = 0;
+delay(2);
+Key2 = 1;
+}
+else //如果为其它字符，灯3亮
+{
+Key3 = 0;
+delay(2);
+Key3 = 1;
+}
+   SendOneByte(r_buf);//回发该字符
+    }
+}

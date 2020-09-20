@@ -377,9 +377,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>led.c</FileName>
+              <FileName>Bluetooth.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\led.c</FilePath>
+              <FilePath>..\Other\Bluetooth\src\Source Group 1\Bluetooth.c</FilePath>
             </File>
           </Files>
         </Group>

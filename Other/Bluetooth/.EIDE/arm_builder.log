@@ -49,3 +49,9 @@
 [2020-07-21 19:34:30]	Link failed !, Exit Code: 3
    在 ARM_Builder_V6.Program.Main(String[] args)
 
+[2020-09-07 22:53:23]	Compilation failed at : "d:\My\keilmake\C51\Other\Bluetooth\src\Source Group 1\Bluetooth.c", Exit Code: 1
+   在 ARM_Builder_V6.Program.Main(String[] args)
+
+[2020-09-11 12:30:25]	Compilation failed at : "d:\My\keilmake\C51\Other\Bluetooth\src\Source Group 1\Bluetooth.c", Exit Code: 2
+   在 ARM_Builder_V6.Program.Main(String[] args)
+

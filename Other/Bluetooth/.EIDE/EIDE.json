@@ -1,5 +1,5 @@
 {
-    "name": "Target",
+    "name": "Bluetooth",
     "type": "C51",
     "mode": "Debug",
     "toolchain": "Keil_C51",
@@ -54,7 +54,7 @@
     "deviceName": null,
     "packDir": null,
     "uploadConfig": {
-        "bin": ".\\out\\Keil_C51\\Target.hex",
+        "bin": ".\\out\\Keil_C51\\Bluetooth.hex",
         "eepromImgPath": "null",
         "options": "./.EIDE/stc.flash.json"
     }

@@ -1,0 +1,5 @@
+[includes]
+d:\My\keilmake\C51\test\dependence
+d:\My\keilmake\C51\test\src
+d:\My\keilmake\C51\test\dependence\build-in\toolchain
+[sourceList]

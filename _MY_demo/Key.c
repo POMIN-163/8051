@@ -7,10 +7,40 @@ sbit k2=P3^0;
 sbit k3=P3^2;
 sbit k4=P3^3;//独立按键IO
 
+//uint、uchar宏定义
+sbit smg1=P2^2;
+sbit smg2=P2^3;
+sbit smg3=P2^4;//数码管IO
+uchar code smgz[] = {
+    0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,
+    0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71};
+    //显示0~F的值
+
+
 void delay(uint x){                //延迟函数10us左右
     while(x--);
 }
-
+// 数码管显示
+void display(uchar mod,uint rec,bit dir){
+    uchar i;
+    char smg[8] = {-1,-1,-1,-1,-1,-1,-1,-1};
+        smg[0] = smgz[rec%10];
+        smg[1] = smgz[(rec/10)%10];
+        smg[2] = smgz[(rec/100)%10];
+        smg[4] = smgz[mod];
+        smg[6] = smgz[dir];
+    for (i = 0; i < 8; i++) {
+        smg1 = ((i)&0x01);
+        smg2 = ((i>>1)&0x01);
+        smg3 = ((i>>2)&0x01);
+        if (smg[i] == -1)
+            P0  = 0x00;
+        else
+            P0  = smg[i];//段码///这三行不可更改否则可能重影
+        delay(100);                //延时
+        P0 = 0x00;                //消隐
+    }
+}
 uchar KEY_ALL(){                //按键处理函数
     uchar key,a;
     P1=0x0f;
@@ -38,7 +68,7 @@ uchar KEY_ALL(){                //按键处理函数
     if(k3==0){delay(10);if(k3==0){key=19;}while(!k3);}
     if(k4==0){delay(10);if(k4==0){key=20;}while(!k4);}
     while (a<50&&P1!=0xf0){
-        delay(1000);
+        delay(10);
         a++;
     }
     return key;
@@ -67,7 +97,7 @@ uchar KEY_16(){                        //矩阵按键检测函数
         }
     }
     while (a<50&&P1!=0xf0){
-        delay(1000);
+        delay(500);
         a++;
     }
     return key;
@@ -82,9 +112,12 @@ uchar KEY_4(){                        //独立按键检测函数
 }
 
 void main(){            //主函数入口
+		uint a;
     while(1){
-        KEY_ALL();
-        KEY_4();
-        KEY_16();
+
+        a = KEY_ALL();
+        //KEY_4();
+      //  KEY_16();
+				display(a);
     }
 }

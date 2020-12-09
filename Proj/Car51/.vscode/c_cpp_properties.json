@@ -1,0 +1,63 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "f:\\_My_Keil\\C51\\Proj\\Car51\\dependence",
+                "f:\\_My_Keil\\C51\\Proj\\Car51\\src",
+                "D:\\Maker\\keil5\\C51\\INC",
+                "f:\\_My_Keil\\C51\\Proj\\Car51\\dependence\\build-in\\STD"
+            ],
+            "defines": [
+                "__C51__",
+                "reentrant=",
+                "conpact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int"
+            ],
+            "intelliSenseMode": "${default}"
+        },
+        {
+            "name": "Target 1",
+            "includePath": [
+                "f:\\_My_Keil\\C51\\Proj\\Car51\\src"
+            ],
+            "defines": [
+                "__C51__",
+                "__VSCODE_C51__",
+                "reentrant=",
+                "compact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "bdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int",
+                "interrupt=",
+                "using=",
+                "_at_=",
+                "_priority_=",
+                "_task_="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

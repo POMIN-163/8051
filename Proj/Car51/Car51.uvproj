@@ -324,7 +324,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\useless</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -379,7 +379,7 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FilePath>.\src\main.c</FilePath>
             </File>
           </Files>
         </Group>

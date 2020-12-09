@@ -12,8 +12,9 @@ void delay(uint x){
 //闪烁灯函数
 void LED(){
     led=0x00;//P2全亮
+		P1=0xff;
     delay(2000);
-    led=0xFF;//全灭
+    //led=0xFF;//全灭
 }
 //流水灯函数
 void LED_RUN(){
@@ -28,7 +29,7 @@ void LED_RUN(){
 void main(){
     while(1){
         LED();
-        LED_RUN();
+        //LED_RUN();
     }
 }
 

@@ -1,0 +1,134 @@
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|18:10:24|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|19:13:00|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|19:23:21|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|19:26:41|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|19:36:44|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|19:37:50|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/21|20:11:16|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+[Error] : ErrorError: write EPIPE
+	at afterWriteDispatched (internal/stream_base_commons.js:146:25)
+	at writeGeneric (internal/stream_base_commons.js:137:3)
+	at Socket._writeGeneric (net.js:698:11)
+	at Socket._write (net.js:710:8)
+	at doWrite (_stream_writable.js:418:12)
+	at writeOrBuffer (_stream_writable.js:402:5)
+	at Socket.Writable.write (_stream_writable.js:302:11)
+	at d.write (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:242:115)
+	at m._writeNow (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:234:350)
+	at Immediate.<anonymous> (d:\Program Files\VSCode\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:234:288)
+	at processImmediate (internal/timers.js:439:21)
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/22|14:58:47|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/7/30|11:35:31|GMT+0800
+[Hidden] : Not found invalid ARM GCC tool path\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/6|12:25:45|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/7|21:03:11|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/11|11:55:52|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/11|11:59:01|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/15|15:05:09|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+[Error] : ErrorError: write EPIPE
+	at afterWriteDispatched (internal/stream_base_commons.js:146:25)
+	at writeGeneric (internal/stream_base_commons.js:137:3)
+	at Socket._writeGeneric (net.js:698:11)
+	at Socket._write (net.js:710:8)
+	at doWrite (_stream_writable.js:418:12)
+	at clearBuffer (_stream_writable.js:544:7)
+	at onwrite (_stream_writable.js:469:7)
+	at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:92:10)
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/19|13:24:04|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/19|13:58:13|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/9/19|18:58:07|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/14|13:01:14|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/14|20:49:59|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/15|14:01:07|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/10/23|23:24:54|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/11/2|11:09:04|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/11/22|16:48:28|GMT+0800
+
+
+
+[4C4C4544-004B-4A10-8035-B3C04F4A5432] : log at : 2020/11/22|16:48:36|GMT+0800
+
+

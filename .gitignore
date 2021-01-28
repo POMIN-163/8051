@@ -6,3 +6,10 @@ Listings/
 DebugConfig/
 OBJ/
 Objects/
+
+_PZ51Broad/
+log/
+
+*.log
+*.POMIN
+*.uvopt

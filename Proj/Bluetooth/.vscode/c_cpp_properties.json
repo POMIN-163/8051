@@ -3,10 +3,10 @@
         {
             "name": "win32",
             "includePath": [
-                "f:\\_My_Keil\\C51\\Other\\Bluetooth\\dependence",
-                "f:\\_My_Keil\\C51\\Other\\Bluetooth\\src\\Source Group 1",
+                "f:\\_My_Arm\\8051\\Proj\\Bluetooth\\dependence",
+                "f:\\_My_Arm\\8051\\Proj\\Bluetooth\\src\\Source Group 1",
                 "D:\\Maker\\keil5\\C51\\INC",
-                "f:\\_My_Keil\\C51\\Other\\Bluetooth\\dependence\\build-in\\STD"
+                "f:\\_My_Arm\\8051\\Proj\\Bluetooth\\dependence\\build-in\\STD"
             ],
             "defines": [
                 "DEBUG",

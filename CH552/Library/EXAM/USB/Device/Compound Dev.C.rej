@@ -1,0 +1,10 @@
+diff a/CH552/Library/EXAM/USB/Device/Compound Dev.C b/CH552/Library/EXAM/USB/Device/Compound Dev.C	(rejected hunks)
+@@ -462,7 +462,7 @@
+     {
+         RI = 0;
+         i = getkey( );
+-        printf( "%c", (UINT8)i );
++        printf( "%c", (UINT8)i );	
+         switch(i)
+         {
+ //��������ϴ�ʾ��

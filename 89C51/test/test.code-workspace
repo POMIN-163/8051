@@ -17,7 +17,8 @@
             "ds1302.h": "c",
             "hong.h": "c",
             "infrared.h": "c",
-            "lcd1602.h": "c"
+            "lcd1602.h": "c",
+            ".eideignore": "ignore"
         }
     }
 }

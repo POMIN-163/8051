@@ -462,7 +462,7 @@ void HIDValueHandle()
     {
         RI = 0;
         i = getkey( );
-        printf( "%c", (UINT8)i );
+        printf( "%c", (UINT8)i );	
         switch(i)
         {
 //鼠标数据上传示例
@@ -518,10 +518,10 @@ void HIDValueHandle()
 }
 main()
 {
-//  CfgFsys( );                                                           //CH559时钟选择配置 
-//  mDelaymS(5);                                                          //等待外部晶振稳定 	 			
-    mInitSTDIO( );                                                        //串口0,可以用于调试
-    printf("start ...\n");
+ // CfgFsys( );                                                           //CH559时钟选择配置 
+ // mDelaymS(5);                                                          //等待外部晶振稳定 	 			
+ //   mInitSTDIO( );                                                        //串口0,可以用于调试
+   // printf("start ...\n");
     USBDeviceCfg();                                                       //模拟鼠标
     USBDeviceEndPointCfg();                                               //端点配置
     USBDeviceIntCfg();                                                    //中断初始化
@@ -535,6 +535,6 @@ main()
         {
             HIDValueHandle();
         }
-        mDelaymS( 100 );                                                   //模拟单片机做其它事
+        mDelaymS( 500 );                                                   //模拟单片机做其它事
     }
 }
